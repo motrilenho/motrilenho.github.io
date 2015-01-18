@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="../css/foundation.css" /><script src="../js/vendor/modernizr.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css" />
+  	<title>Materiales de Construcción Juan Bautista Rodríguez | Motril</title>
+  	<meta charset="UTF-8">
+  	<meta name="description" content="Materiales de construcción en Motril" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBWenDFpqHDDOz3w6qdtLIh2PylmqEkcfA&sensor=SET_TO_TRUE_OR_FALSE"></script>
+    
+    <script>
+	function initialize() {
+		  var myLatlng = new google.maps.LatLng(36.753377,-3.51201);
+		  var mapOptions = {
+		    zoom: 16,
+		    center: myLatlng
+		  };
+
+		  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+		  var contentString = '<div id="titulo">J. Bautista Rodríguez S.L.</div>'+
+		  					'<div>Materiales de construcción</br>'+
+		  					'C/ Fernando de los Ríos, nº3</br>'+
+		  					'Tel: 958 601 956</div>';
+
+		  var infowindow = new google.maps.InfoWindow({
+		      content: contentString
+		  });
+
+		  var marker = new google.maps.Marker({
+		      position: myLatlng,
+		      map: map,
+		      title: 'Uluru (Ayers Rock)'
+		  });
+		  google.maps.event.addDomListener(marker, 'click', function() {
+		    infowindow.open(map,marker);
+		  });
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+
+</head>
+<!-- Contenido HTML -->
+<body>
+	<div class="row sombra">
+	<!-- Cabecera -->
+	<header>
+		<div class="large-12 columns">
+			<div id="bloqueLogo">
+				<figure id="logo" class="spin">
+					<img src="../img/logo.png" alt="Logo" height="250" width="250">
+				</figure>
+			<h1> Materiales de construcción </br>Juan Bautista Rodríguez S.L</h1>
+			</div>
+			<nav class="top-bar" data-topbar role="navigation">
+				<ul class="title-area">
+					<li class="name">
+						<a href="../index.html">Inicio</a>
+					</li>
+					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+				</ul>
+			  	<section class="top-bar-section">
+				    <!-- Right Nav Section -->
+				    <ul class="right">
+				    	<li><a href="exposicion.html">Exposición</a></li>
+				    	<li><a href="catalogo.html">Catálogo</a></li>
+						<li class="active"><a href="mapas.html">Cómo llegar</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</section>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Cuerpo de la página -->
+  	<section id="cuerpo">
+		<article id="direccion" class="large-5 columns">
+			<h2>Dirección.</h2>
+			<p>Oficina y exposición</p>
+			<p>C\ Fernando de los Ríos, nº3 
+			</br> (Frente al campo de fútbol)</p>
+			<figure><img src="../img/fachada.png" alt="Fachada"/></figure>
+		</article>
+		<article id="mapa" class="large-7 columns">
+			<div id="map-canvas"></div>
+		</article>
+	</section>
+
+	<!-- Pie de página -->
+	<footer class="sombra">
+		<div class="large-12 columns">
+			<hr/>
+			<div id="pie" class="row">
+				<div class="large-6 columns">
+					<p>© Copyright J. Bautista Rodríguez S.L. 2014</p>
+				</div>
+				<div class="large-6 columns">
+					<ul class="inline-list right">
+            			<li><a href="exposicion.html">Exposición</a></li>
+            			<li><a href="mapas.html">Localización</a></li>
+            			<li><a href="contacto.html">Contacto</a></li>
+          			</ul>
+				</div>
+			</div>
+		</div> 
+	</footer>
+
+	<script src="../js/vendor/jquery.js"></script>
+    <script src="../js/foundation.min.js"></script>
+    <script>
+    	$(document).foundation();
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+body {
+  background: #e6e6e6;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 2em;
+}
+header {
+  margin: 0.5em 0 1em 0;
+}
+nav a {
+  font-size: 1.1em;
+  padding: 0 15px;
+  line-height: 45px;
+}
+#categorias figure {
+  margin: 0;
+  margin-bottom: 1em;
+}
+#cuerpo {
+  padding-right: 0.9em;
+}
+#direccion figure {
+  margin: 0;
+  margin-bottom: 2em;
+}
+#logo,
+h1 {
+  display: inline-block;
+}
+#map-canvas {
+  height: 25em;
+}
+#map-canvas img {
+  max-width: none;
+}
+#slider {
+  height: 2000px;
+}
+#texto {
+  vertical-align: middle;
+}
+.name a {
+  color: #fff;
+}
+.row {
+  background: #fff;
+}
+.sombra {
+  box-shadow: 2px 2px 50px #999;
+  -webkit-box-shadow: 2px 2px 50px #999;
+  -moz-box-shadow: 2px 2px 50px #999;
+}
+.top-bar {
+  margin-bottom: 1.5em;
+}
+.spin {
+  transition: transform 0.5s ease;
+}
+.spin:hover {
+  transform: rotate(360deg);
+}
+.panel {
+  margin-top: 2em;
+  text-align: center;
+}
