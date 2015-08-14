@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+	<meta name="author" content="@motrilenho" /> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frases de Knekro</title>
+
+    <link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/boton.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	
+    <script src="js/vendor/jquery.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/foundation.min.js"></script>
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="http://api.html5media.info/1.1.5/html5media.min.js"></script>
+	
+	<script src="js/jquery.rwdImageMaps.min.js"></script>
+
+
+</head> 
+<body background="fondo.jpg">
+	
+	<img src="img/SS.jpg">
+	<div class="contain-to-grid sticky">
+		<nav class="top-bar" data-topbar>
+			<!-- Title -->
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="index.html">Inicio</a></h1>
+				</li>
+			<!-- Mobile Menu Toggle -->
+				<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+			</ul>
+
+			<!-- Top Bar Section -->
+			<section class="top-bar-section">			
+			<!-- Top Bar Left Nav Elements -->
+				<ul class="left">
+					<li class="divider"></li>
+					<li>
+						<a href="formulario.html">Contacto</a>
+					</li>
+					<li class="divider"></li>
+					<li>
+						<a href="#creadores">Creadores</a>
+					</li>
+				</ul>
+			<!-- Top Bar Right Nav Elements -->
+				<ul class="right">
+					<!-- Divider -->
+					<li class="divider"></li>
+					<li class="has-form">
+						<div class="row collapse">
+							<div class="large-8 small-9 columns">
+								<input style="height: 29px;" type="text" placeholder="">
+							</div>
+							<div class="large-4 small-3 columns">
+								<a href="#" class="alert button expand">Buscar</a>
+							</div>
+						</div>
+					</li>   
+				</ul>
+			</section>
+		</nav>
+	</div>
+	<div class="row">
+		<div id="panel" class="callout panel">
+			<div class="row">
+				<h3>Buenas gente</h3>
+				</br>
+				<p>Para cualquier duda que tengáis sobre la web, o cualquier otra cosa, si quereis contratar a este gran diseñador o lo que sea, no dudéis en contactar con nosotros.</p>
+				<p>Si queréis añadir alguna frase a la web, pasadme el vídeo y el segundo en el que Knekro dice la frase para que así yo la pueda grabar y subirla a la web.</p>
+					
+				<div id="contactform">
+					<!-- bloque confirmacion de envio oculto  -->
+					<div id="c_information" class="hide">
+						<p></p>
+					</div>
+					<!-- fin bloque confirmacion de envio -->
+					 
+					<!-- inicio formulario -->
+					<form id="c_form" name="contact">
+						<div>
+						  <label>
+							<p>Nombre</p>
+							<input name="nombre" id="c_name" type="text" class="c_input" placeholder="nombre..."/>
+						  </label>
+						  <br/>
+						  <label>
+							<p>Email:</p>
+							<input name="email"  id="c_mail" type="text" class="c_input" placeholder="email..."/>
+						  </label>
+						</div>
+						<label>
+						  <p>Mensaje:</p>
+						  <textarea name="mensaje"  id="c_msg" placeholder="mensaje..."></textarea>
+						</label>
+						<!-- boton enviar  -->
+						<div id="c_btns">
+							<input name="send" onclick="cargaSendMail()" type="button" value="Enviar" class="btn-b" id="c_enviar"></input>
+						</div>
+					</form>
+					<!-- fin formulario -->
+				</div>
+			</div>
+			
+			<img id="creadores" src="img/cuadro.png"  alt="Creadores" usemap="#cuadro">
+			<map name="cuadro">	
+				<area shape="rect" coords="57,53,350,135" href="https://twitter.com/Saul_Styles/" target="_blank" alt="https://twitter.com/Saul_Styles">
+				<area shape="rect" coords="56,148,349,230" href="https://twitter.com/Miss_Vaca/" target="_blank" alt="https://twitter.com/Miss_Vaca">
+				<area shape="rect" coords="360,55,653,138" href="https://twitter.com/DuoCanario/" target="_blank" alt="https://twitter.com/DuoCanario">
+				<area shape="rect" coords="362,149,653,227" href="https://twitter.com/AlvaryLCS/" target="_blank" alt="https://twitter.com/AlvaryLCS">
+				<area shape="rect" coords="676,48,973,140" href="https://twitter.com/motrilenho/" target="_blank" alt="https://twitter.com/motrilenho">
+			</map>
+			<script src="js/jquery.rwdImageMaps.min.js"></script>
+			<script>
+				$(document).ready(function(e) {
+					$('img[usemap]').rwdImageMaps();
+				});
+			</script>
+		</div>
+	</div>
+    
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
